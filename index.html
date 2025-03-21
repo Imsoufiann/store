@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIKDAM Timepieces & Gems</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>MIKDAM</h1>
+      <p>Timepieces & Gems</p>
+    </div>
+    <nav>
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-list">
+        <li><a href="catalog" class="active">Collections</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Expertise</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Timeless Elegance</h2>
+        <p>Discover our exquisite collection of luxury watches and fine jewelry</p>
+        <a href="#catalog" class="btn">Explore Collection</a>
+      </div>
+    </section>
+    <!-- Featured Categories -->
+    <section class="categories">
+      <div class="category">
+        <img src="watche.jpg" alt="Luxury Watches">
+        <h3>Timepieces</h3>
+        <a href="#catalog" class="category-link">View Collection</a>
+      </div>
+      <div class="category">
+        <img src="fine-jewelry.jpg" alt="Fine Jewelry">
+        <h3>Fine Jewelry</h3>
+        <a href="#catalog" class="category-link">View Collection</a>
+      </div>
+    </section>
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+      <div class="section-header">
+        <h2>Our Collections</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="watches" id="watches-section">Watches</button>
+          <button class="filter-btn" data-filter="jewelry">Jewelry</button>
+        </div>
+      </div>
+      <div class="products">
+        <!-- Watch Products -->
+        <div class="product" data-category="watches">
+          <div class="product-image">
+            <img src="luxury-watch1.jpg" alt="Luxury Watch 1">
+            <div class="overlay">
+              <a href="product-template.html?product=gold-rolex" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Gold Rolex</h3>
+            <p class="category">Timepieces</p>
+            <p class="price">$12,500</p>
+          </div>
+        </div>
+        <div class="product" data-category="watches">
+          <div class="product-image">
+            <img src="luxury-watch2.jpg" alt="Luxury Watch 2">
+            <div class="overlay">
+             <a href="product-template.html?product=casio-mtpm305d-1a" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Casio MTPM305D-1A</h3>
+            <p class="category">Timepieces</p>
+            <p class="price">$249.00</p>
+          </div>
+        </div>
+        <div class="product" data-category="watches">
+          <div class="product-image">
+            <img src="luxury-watch3.jpg" alt="Luxury Watch 3">
+            <div class="overlay">
+              <a href="product-template.html?product=fossil" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Fossil</h3>
+            <p class="category">Timepieces</p>
+            <p class="price">$9,300</p>
+          </div>
+        </div>
+        <!-- Jewelry Products -->
+        <div class="product" data-category="jewelry">
+          <div class="product-image">
+            <img src="luxury-jewelry1.jpg" alt="Luxury Jewelry 1">
+            <div class="overlay">
+            <a href="product-template.html?product=heart-earring" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Heart Earring</h3>
+            <p class="category">Fine Jewelry</p>
+            <p class="price">$7,800</p>
+          </div>
+        </div>
+        <div class="product" data-category="jewelry">
+          <div class="product-image">
+            <img src="luxury-jewelry2.jpg" alt="Luxury Jewelry 2">
+            <div class="overlay">
+              <a href="product-template.html?product=ring" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Ring</h3>
+            <p class="category">Fine Jewelry</p>
+            <p class="price">$5,400</p>
+          </div>
+        </div>
+        <div class="product" data-category="jewelry">
+          <div class="product-image">
+            <img src="luxury-jewelry3.jpg" alt="Luxury Jewelry 3">
+            <div class="overlay">
+              <a href="product-template.html?product=emerald-tennis-bracelet" class="view-btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Emerald Tennis Bracelet</h3>
+            <p class="category">Fine Jewelry</p>
+            <p class="price">$11,200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-options">
+        <div class="contact-option">
+          <h3>Fill Out a Form</h3>
+          <form action="submit_form.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="contact-option">
+          <h3>Chat on WhatsApp</h3>
+          <a href="https://wa.me/212691835967" target="_blank" class="btn whatsapp-btn">Chat Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>MIKDAM</h2>
+                <p>Timepieces & Gems</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Collections</h3>
+                    <ul>
+                        <li><a href="#watches-section">Watches</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/imsoufiann/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:soufiane@mikdam.ma" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                <form class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MIKDAM Timepieces & Gems. All rights reserved.</p>
+            <ul class="footer-legal">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // === Mobile Menu Toggle ===
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        }
+
+        // === Simple Filter Functionality for Catalog ===
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const products = document.querySelectorAll('.product');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Show/hide products based on filter
+                products.forEach(product => {
+                    if (filter === 'all' || product.getAttribute('data-category') === filter) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+                
+            
+</body>
+</html>

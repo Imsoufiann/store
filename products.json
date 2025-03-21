@@ -1,0 +1,180 @@
+{
+  "products": {
+    "gold-rolex": {
+      "id": "gold-rolex",
+      "name": "Gold Rolex",
+      "category": "Timepieces",
+      "price": "$12,500",
+      "rating": 5,
+      "reviews": 24,
+      "description": "A luxurious gold Rolex watch with exquisite craftsmanship.",
+      "specs": [
+        { "key": "Case Material", "value": "18K Gold" },
+        { "key": "Diameter", "value": "40mm" },
+        { "key": "Movement", "value": "Automatic" },
+        { "key": "Water Resistance", "value": "100 meters" }
+      ],
+      "images": ["luxury-watch1.jpg"],
+      "thumbnails": ["luxury-watch1.jpg"],
+      "reference": "GR-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Gold Rolex."],
+      "craftsmanship": ["Craftsmanship details about the Gold Rolex."],
+      "reviewList": [
+        {
+          "name": "John D.",
+          "rating": 5,
+          "date": "March 10, 2025",
+          "text": "An exquisite timepiece with unmatched quality."
+        }
+      ]
+    },
+    "casio-mtpm305d-1a": {
+      "id": "casio-mtpm305d-1a",
+      "name": "Casio MTPM305D-1A",
+      "category": "Timepieces",
+      "price": "$249.00",
+      "rating": 4,
+      "reviews": 18,
+      "description": "A reliable and affordable Casio watch.",
+      "specs": [
+        { "key": "Case Material", "value": "Stainless Steel" },
+        { "key": "Diameter", "value": "42mm" },
+        { "key": "Movement", "value": "Quartz" },
+        { "key": "Water Resistance", "value": "50 meters" }
+      ],
+      "images": ["luxury-watch2.jpg"],
+      "thumbnails": ["luxury-watch2.jpg"],
+      "reference": "CM-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Casio MTPM305D-1A."],
+      "craftsmanship": ["Craftsmanship details about the Casio MTPM305D-1A."],
+      "reviewList": [
+        {
+          "name": "Jane S.",
+          "rating": 4,
+          "date": "February 15, 2025",
+          "text": "Great value for money and reliable performance."
+        }
+      ]
+    },
+    "fossil": {
+      "id": "fossil",
+      "name": "Fossil",
+      "category": "Timepieces",
+      "price": "$9,300",
+      "rating": 5,
+      "reviews": 20,
+      "description": "A stylish and elegant Fossil watch.",
+      "specs": [
+        { "key": "Case Material", "value": "Stainless Steel" },
+        { "key": "Diameter", "value": "44mm" },
+        { "key": "Movement", "value": "Automatic" },
+        { "key": "Water Resistance", "value": "100 meters" }
+      ],
+      "images": ["luxury-watch3.jpg"],
+      "thumbnails": ["luxury-watch3.jpg"],
+      "reference": "FS-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Fossil watch."],
+      "craftsmanship": ["Craftsmanship details about the Fossil watch."],
+      "reviewList": [
+        {
+          "name": "Michael B.",
+          "rating": 5,
+          "date": "January 20, 2025",
+          "text": "A beautiful watch with excellent craftsmanship."
+        }
+      ]
+    },
+    "heart-earring": {
+      "id": "heart-earring",
+      "name": "Heart Earring",
+      "category": "Fine Jewelry",
+      "price": "$7,800",
+      "rating": 5,
+      "reviews": 15,
+      "description": "Elegant heart-shaped earrings with diamonds.",
+      "specs": [
+        { "key": "Metal", "value": "18K Gold" },
+        { "key": "Diamonds", "value": "0.5 carats" }
+      ],
+      "images": ["luxury-jewelry1.jpg"],
+      "thumbnails": ["luxury-jewelry1.jpg"],
+      "reference": "HE-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Heart Earring."],
+      "craftsmanship": ["Craftsmanship details about the Heart Earring."],
+      "reviewList": [
+        {
+          "name": "Emily R.",
+          "rating": 5,
+          "date": "March 5, 2025",
+          "text": "Beautiful earrings with stunning diamonds."
+        }
+      ]
+    },
+    "ring": {
+      "id": "ring",
+      "name": "Ring",
+      "category": "Fine Jewelry",
+      "price": "$5,400",
+      "rating": 4,
+      "reviews": 10,
+      "description": "A classic ring with a brilliant diamond.",
+      "specs": [
+        { "key": "Metal", "value": "Platinum" },
+        { "key": "Diamond", "value": "1 carat" }
+      ],
+      "images": ["luxury-jewelry2.jpg"],
+      "thumbnails": ["luxury-jewelry2.jpg"],
+      "reference": "RG-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Ring."],
+      "craftsmanship": ["Craftsmanship details about the Ring."],
+      "reviewList": [
+        {
+          "name": "Sarah L.",
+          "rating": 4,
+          "date": "February 10, 2025",
+          "text": "A beautiful ring with a stunning diamond."
+        }
+      ]
+    },
+    "emerald-tennis-bracelet": {
+      "id": "emerald-tennis-bracelet",
+      "name": "Emerald Tennis Bracelet",
+      "category": "Fine Jewelry",
+      "price": "$11,200",
+      "rating": 5,
+      "reviews": 12,
+      "description": "A luxurious tennis bracelet with emeralds.",
+      "specs": [
+        { "key": "Metal", "value": "18K Gold" },
+        { "key": "Emeralds", "value": "3 carats" }
+      ],
+      "images": ["luxury-jewelry3.jpg"],
+      "thumbnails": ["luxury-jewelry3.jpg"],
+      "reference": "ETB-001",
+      "availability": "In Stock",
+      "details": ["Detailed description about the Emerald Tennis Bracelet."],
+      "craftsmanship": ["Craftsmanship details about the Emerald Tennis Bracelet."],
+      "reviewList": [
+        {
+          "name": "Anna K.",
+          "rating": 5,
+          "date": "January 25, 2025",
+          "text": "An exquisite bracelet with beautiful emeralds."
+        }
+      ]
+    }
+  },
+  "related": {
+    "gold-rolex": ["casio-mtpm305d-1a", "fossil", "heart-earring"],
+    "casio-mtpm305d-1a": ["gold-rolex", "fossil", "ring"],
+    "fossil": ["gold-rolex", "casio-mtpm305d-1a", "emerald-tennis-bracelet"],
+    "heart-earring": ["ring", "emerald-tennis-bracelet", "gold-rolex"],
+    "ring": ["heart-earring", "emerald-tennis-bracelet", "casio-mtpm305d-1a"],
+    "emerald-tennis-bracelet": ["heart-earring", "ring", "fossil"]
+  }
+}

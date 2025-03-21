@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - MIKDAM Timepieces & Gems</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .home-icon-fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: var(--primary-color);
+      z-index: 1000;
+    }
+    .home-icon-fixed:hover {
+      color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-icon-fixed"><i class="fas fa-home"></i></a>
+  <header>
+    <div class="logo">
+     <a href="index.html"> <h1>MIKDAM</h1>
+      <p>Timepieces & Gems</p></a>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list">
+        <li><a href="catalog" class="active">Collections</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Expertise</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
+  <main class="product-detail-main">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / 
+      <a href="index.html#catalog">Collections</a> / 
+      <span id="product-name">Product Name</span>
+    </div>
+    <section class="product-detail">
+      <div class="product-gallery">
+        <div class="main-image">
+          <img src="/api/placeholder/600/600" alt="Product Image" id="mainImage">
+        </div>
+        <div class="thumbnail-container" id="thumbnail-container">
+          <!-- Thumbnails will be dynamically added here -->
+        </div>
+      <div class="product-info-detail">
+        <h1 id="product-title">Product Title</h1>
+        <p class="product-category" id="product-category">Product Category</p>
+        <div class="product-price" id="product-price">$0.00</div>
+        <div class="rating" id="product-rating">
+          <!-- Rating will be dynamically added here -->
+        </div>
+        <div class="product-description" id="product-description">
+          <p>Product Description</p>
+        </div>
+        <div class="product-specs" id="product-specs">
+          <h3>Specifications</h3>
+          <ul>
+            <!-- Specifications will be dynamically added here -->
+          </ul>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decrementQuantity()">-</button>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="quantity-btn" onclick="incrementQuantity()">+</button>
+          </div>
+          <button class="btn add-to-cart">Add to Cart</button>
+          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="product-meta">
+          <p><span>Reference:</span> <span id="product-reference">Reference Number</span></p>
+          <p><span>Availability:</span> <span class="in-stock" id="product-availability">In Stock</span></p>
+        </div>
+        <div class="product-services">
+          <div class="service">
+            <i class="fas fa-box"></i>
+            <p>Complimentary premium packaging</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-truck"></i>
+            <p>Insured worldwide shipping</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-shield-alt"></i>
+            <p>5-year international warranty</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-tabs">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="details">Details</button>
+        <button class="tab-btn" data-tab="craftsmanship">Craftsmanship</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+      </div>
+      <div class="tab-content active" id="details">
+        <div class="tab-inner" id="details-content">
+          <!-- Details content will be dynamically added here -->
+        </div>
+      </div>
+      <div class="tab-content" id="craftsmanship">
+        <div class="tab-inner" id="craftsmanship-content">
+          <!-- Craftsmanship content will be dynamically added here -->
+        </div>
+      </div>
+      <div class="tab-content" id="reviews">
+        <div class="tab-inner" id="reviews-content">
+          <!-- Reviews content will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+    <section class="related-products">
+      <h2>You May Also Like</h2>
+      <div class="related-grid" id="related-products">
+        <!-- Related products will be dynamically added here -->
+      </div>
+    </section>
+ <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-options">
+        <div class="contact-option">
+          <h3>Fill Out a Form</h3>
+          <form action="submit_form.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="contact-option">
+          <h3>Chat on WhatsApp</h3>
+          <a href="https://wa.me/212691835967" target="_blank" class="btn whatsapp-btn">Chat Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>MIKDAM</h2>
+        <p>Timepieces & Gems</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Collections</h3>
+          <ul>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Limited Editions</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Craftsmanship</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <form class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <div class="form-group">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MIKDAM Timepieces & Gems. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
